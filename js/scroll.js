@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // Проверяем, является ли устройство мобильным
-  const isMobileDevice = () => /Mobi|Android/i.test(navigator.userAgent);
+  const isMobileDevice = () => /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   if (!isMobileDevice()) {
     // Обработчик колесика мыши
@@ -84,6 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       scrollToSection(currentSectionIndex);
     });
+  } else {
+    console.log("Мобильное устройство: скрипт не будет вмешиваться в прокрутку.");
   }
 
   window.addEventListener("resize", () => {
