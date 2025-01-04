@@ -1,0 +1,42 @@
+<svg width="253" height="253" viewBox="0 0 253 253" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="54.5" y="54.5" width="144" height="144" rx="25.5" stroke="white" stroke-width="11"/>
+  <rect x="78" y="78" width="98" height="98" rx="10" stroke="white" stroke-width="10"/>
+  <path d="M130 107C126.686 107 124 109.686 124 113C124 116.314 126.686 119 130 119V107ZM175.5 107H130V119H175.5V107Z" fill="white"/>
+  <path d="M151 136C147.686 136 145 138.686 145 142C145 145.314 147.686 148 151 148V136ZM176 136H151V148H176V136Z" fill="white"/>
+  <path d="M172.5 199V242" stroke="white" stroke-width="9"/>
+  <circle cx="173" cy="242" r="11" fill="white"/>
+  <path d="M126.5 199V242" stroke="white" stroke-width="9"/>
+  <circle cx="127" cy="242" r="11" fill="white"/>
+  <path d="M79.5 199V242" stroke="white" stroke-width="9"/>
+  <circle cx="80" cy="242" r="11" fill="white"/>
+  <path d="M172.5 54V11" stroke="white" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1 0 0 -1 162 22)" fill="white"/>
+  <path d="M126.5 54V11" stroke="white" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1 0 0 -1 116 22)" fill="white"/>
+  <path d="M79.5 54V11" stroke="white" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1 0 0 -1 69 22)" fill="white"/>
+  <path d="M199 173.5L242 173.499" stroke="#155DE9" stroke-width="9"/>
+  <path d="M199 173.5L242 173.499" stroke="#155DE9" stroke-width="9"/>
+  <path d="M199 173.5L242 173.499" stroke="#155DE9" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1.42324e-05 1 1 -1.42324e-05 231 163)" fill="#155DE9"/>
+  <path d="M199 127.5L242 127.499" stroke="#155DE9" stroke-width="9"/>
+  <path d="M199 127.5L242 127.499" stroke="#155DE9" stroke-width="9"/>
+  <path d="M199 127.5L242 127.499" stroke="#155DE9" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1.42324e-05 1 1 -1.42324e-05 231 117)" fill="#155DE9"/>
+  <path d="M199 80.5L242 80.4994" stroke="#155DE9" stroke-width="9"/>
+  <path d="M199 80.5L242 80.4994" stroke="#155DE9" stroke-width="9"/>
+  <path d="M199 80.5L242 80.4994" stroke="#155DE9" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1.42324e-05 1 1 -1.42324e-05 231 70)" fill="#155DE9"/>
+  <path d="M54 172.5L11 172.499" stroke="white" stroke-width="9"/>
+  <circle cx="10.9998" cy="173" r="11" transform="rotate(90.0008 10.9998 173)" fill="white"/>
+  <path d="M54 126.5L11 126.499" stroke="white" stroke-width="9"/>
+  <circle cx="10.9998" cy="127" r="11" transform="rotate(90.0008 10.9998 127)" fill="white"/>
+  <path d="M54 79.5L11 79.4994" stroke="white" stroke-width="9"/>
+  <circle cx="10.9998" cy="79.9998" r="11" transform="rotate(90.0008 10.9998 79.9998)" fill="white"/>
+  <path d="M199 173.5L242 173.499" stroke="white" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1.42324e-05 1 1 -1.42324e-05 231 163)" fill="white"/>
+  <path d="M199 127.5L242 127.499" stroke="white" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1.42324e-05 1 1 -1.42324e-05 231 117)" fill="white"/>
+  <path d="M199 80.5L242 80.4994" stroke="white" stroke-width="9"/>
+  <circle cx="11" cy="11" r="11" transform="matrix(1.42324e-05 1 1 -1.42324e-05 231 70)" fill="white"/>
+</svg>
