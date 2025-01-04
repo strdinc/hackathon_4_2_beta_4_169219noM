@@ -64,26 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToSection(currentSectionIndex);
   });
 
-  // Обработчик сенсорных свайпов
-  let touchStartY = 0;
-
-  document.addEventListener("touchstart", (event) => {
-    touchStartY = event.touches[0].clientY;
-  });
-
-  document.addEventListener("touchend", (event) => {
-    if (isScrolling) return;
-
-    const touchEndY = event.changedTouches[0].clientY;
-
-    if (touchEndY < touchStartY && currentSectionIndex < sections.length - 1) {
-      currentSectionIndex++;
-    } else if (touchEndY > touchStartY && currentSectionIndex > 0) {
-      currentSectionIndex--;
-    }
-
-    scrollToSection(currentSectionIndex);
-  });
+  
 
   // Обновление текущего блока при изменении размера окна
   window.addEventListener("resize", () => {
