@@ -33,6 +33,7 @@
     background-color: #0D0C10;
     scroll-behavior: smooth;
     cursor: default;
+    overflow-x: hidden;
   }
 
   /* Отключаем прокрутку */
