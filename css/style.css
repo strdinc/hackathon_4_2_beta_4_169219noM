@@ -501,7 +501,7 @@
     flex-direction: row;
     width: 100%;
     height: auto;
-    padding-top: calc(200 / 1920 * 100vw);
+    padding-top: calc(0 / 1920 * 100vw);
     padding-left: calc(78 / 1920 * 100vw);
     padding-right: calc(78 / 1920 * 100vw);
     z-index: 0;
@@ -534,7 +534,7 @@
     border: none;
     width: 100%;
     text-align: left;
-    font-size: calc(40 / 1920 * 100vw);
+    font-size: calc(35 / 1920 * 100vw);
     font-weight: 500;
     padding-left: calc(10 / 1920 * 100vw);
   }
@@ -552,8 +552,8 @@
     background-color: transparent;
     padding-left: calc(10 / 1920 * 100vw);
     font-weight: 200;
-    font-size: calc(35 / 1920 * 100vw);
-    line-height: calc(40 / 1920 * 100vw);
+    font-size: calc(27 / 1920 * 100vw);
+    line-height: calc(27 / 1920 * 100vw);
   }
 
   .qa_line {
@@ -616,7 +616,7 @@
     flex-direction: column;
     width: 100%;
     height: calc(1080 / 1920 * 100vw);
-    padding-top: calc(150 / 1920 * 100vw);
+    padding-top: calc(78 / 1920 * 100vw);
     padding-left: calc(78 / 1920 * 100vw);
     padding-right: calc(78 / 1920 * 100vw);
   }
