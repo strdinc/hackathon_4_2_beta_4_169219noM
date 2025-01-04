@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToSection(currentSectionIndex);
   });
 
-  
+
 
   // Обновление текущего блока при изменении размера окна
   window.addEventListener("resize", () => {

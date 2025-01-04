@@ -29,7 +29,6 @@
   }
 
   body {
-    overflow: hidden;
     font-family: 'Gilroy', serif;
     background-color: #0D0C10;
     scroll-behavior: smooth;
