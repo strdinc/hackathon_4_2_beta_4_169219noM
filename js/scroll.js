@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     console.log(
-      Прокрутка к блоку: ${sections[index].id} (координата: ${scrollTarget})
-  );
+      `Прокрутка к блоку: ${sections[index].id} (координата: ${scrollTarget})`
+    );
 
     setTimeout(() => {
       isScrolling = false;
