@@ -103,7 +103,7 @@
 
   .container {
     position: absolute; /* Выход из потока */
-    top: calc(  / 1920 * 100vw);
+    top: calc(0 / 1920 * 100vw);
     left: 0;
     width: 20%;
     z-index: -1; /* Помещаем на задний план */

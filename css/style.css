@@ -262,7 +262,7 @@
 
   .second_screen {
     margin-top: calc(0 / 1920 * 100vw);
-    padding-top: calc(78 / 1920 * 100vw);
+    padding-top: calc(0 / 1920 * 100vw);
     display: block;
     position: relative;
     overflow: hidden;
@@ -583,7 +583,7 @@
     display: flex;
     width: auto;
     height: calc(1080 / 1920 * 100vw);
-    padding-top: calc(78 / 1920 * 100vw);
+    padding-top: calc(0 / 1920 * 100vw);
     padding-left: calc(78 / 1920 * 100vw);
     padding-right: calc(78 / 1920 * 100vw);
   }
@@ -601,7 +601,7 @@
     height: calc(1080 / 1920 * 100vw);
     padding-left: calc(78 / 1920 * 100vw);
     padding-right: calc(78 / 1920 * 100vw);
-    padding-top: calc(78 / 1920 * 100vw);
+    padding-top: calc(0 / 1920 * 100vw);
   }
 
   .prize_title {
@@ -716,11 +716,12 @@
     position: absolute;
   }
 
+
   .KemSU_logo {
     width: calc(254 / 1920 * 100vw);
     height: auto;
     position: absolute;
-    top: calc(213 / 1920 * 100vw);
+    top: calc(290 / 1920 * 100vw);
     left: calc(1067 / 1920 * 100vw);
   }
 
@@ -728,7 +729,7 @@
     width: calc(502 / 1920 * 100vw);
     height: auto;
     position: absolute;
-    top: calc(350 / 1920 * 100vw);
+    top: calc(440 / 1920 * 100vw);
     left: calc(1067 / 1920 * 100vw);
   }
 
@@ -736,7 +737,7 @@
     font-size: calc(47 / 1920 * 100vw);
     font-weight: 300;
     position: absolute;
-    top: calc(550 / 1920 * 100vw);
+    top: calc(720 / 1920 * 100vw);
     left: calc(1067 / 1920 * 100vw);
   }
 
@@ -744,7 +745,7 @@
     font-size: calc(47 / 1920 * 100vw);
     font-weight: 300;
     position: absolute;
-    top: calc(620 / 1920 * 100vw);
+    top: calc(770 / 1920 * 100vw);
     left: calc(1067 / 1920 * 100vw);
   }
 
