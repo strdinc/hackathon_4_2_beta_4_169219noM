@@ -28,13 +28,12 @@
     border-color: white;
   }
 
-  body {
+  .body {
     overflow: hidden;
     font-family: 'Gilroy', serif;
     background-color: #0D0C10;
     scroll-behavior: smooth;
     cursor: default;
-    overflow-x: hidden;
   }
 
   /* Отключаем прокрутку */
@@ -140,8 +139,7 @@
     color: white;
     font-size: calc(36 / 498 * 100vw);
     position: relative;
-    margin-top: calc(-45 / 498 * 100vw);
-    margin-right: calc(0 / 498 * 100vw);
+    margin: calc(-45 / 498 * 100vw) calc(0 / 498 * 100vw) auto auto;
     text-align: right;
     font-weight: 500;
   }
