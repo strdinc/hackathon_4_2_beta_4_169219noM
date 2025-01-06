@@ -110,11 +110,31 @@
     margin: 0; /* Убираем возможные отступы */
   }
 
-  .first_screen {
+  .first_screen, .second_screen, .third_screen,
+  .fourth_screen, .fifth_screen, .sixth_screen, .seventh_screen {
     width: calc(498 / 498 * 100vw);
     height: calc(1080 / 498 * 100vw);
     position: relative;
-    padding-left: calc(30 / 498 * 100vw);
+    padding: calc(30 / 498 * 100vw);
+  }
+
+  .title {
+    font-family: 'Gilroy', arial, serif;
+    color: white;
+    font-size: calc(115 / 498 * 100vw);
+    position: relative;
+    margin-top: calc(400 / 498 * 100vw);
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .sub_title {
+    font-family: 'Gilroy', arial, serif;
+    color: white;
+    font-size: calc(36 / 498 * 100vw);
+    position: relative;
+    margin-top: calc(-40 / 498 * 100vw);
+    text-align: right;
+    font-weight: 500;
   }
 }
-
