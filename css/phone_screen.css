@@ -34,6 +34,7 @@
     background-color: #0D0C10;
     scroll-behavior: smooth;
     cursor: default;
+    overflow-x: hidden;
   }
 
   /* Отключаем прокрутку */
@@ -121,7 +122,6 @@
 
   .first_screen {
     flex-direction: column;
-    align-items: left;
     justify-content: center;
     text-align: center;
   }
@@ -140,7 +140,7 @@
     color: white;
     font-size: calc(36 / 498 * 100vw);
     position: relative;
-    margin-top: calc(-40 / 498 * 100vw);
+    margin-top: calc(-45 / 498 * 100vw);
     margin-right: calc(0 / 498 * 100vw);
     text-align: right;
     font-weight: 500;

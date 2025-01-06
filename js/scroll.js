@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Идентификаторы блоков для прокрутки
   const sectionIds = [
     "first_screen",
     "second_screen",
@@ -10,30 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
     "seventh_screen"
   ];
 
-  // Получаем элементы по их ID
   const sections = sectionIds
     .map(id => document.getElementById(id))
     .filter(section => section !== null);
 
-  // Проверка: нашли ли мы все блоки?
   if (sections.length === 0) {
     console.error("Блоки для прокрутки не найдены.");
     return;
   }
 
-  console.log("Блоки для прокрутки:", sections);
+  let isScrolling = false;
+  let currentSectionIndex = 0;
+  let touchStartY = 0;
+  const swipeThreshold = 50; // Минимальная длина свайпа для срабатывания
 
-  let isScrolling = false; // Флаг для предотвращения двойного скролла
-  let currentSectionIndex = 0; // Индекс текущего блока
-
-  // Функция для прокрутки к конкретному блоку
   const scrollToSection = (index) => {
-    if (index < 0 || index >= sections.length) return; // Выход за границы
+    if (index < 0 || index >= sections.length || isScrolling) return;
 
-    const scrollTarget =
-      index === 0
-        ? 0 // Если первый блок, прокручиваем до самого верха
-        : sections[index].offsetTop + sections[index].offsetHeight / 2 - window.innerHeight / 2;
+    const scrollTarget = sections[index].offsetTop;
 
     isScrolling = true;
 
@@ -42,16 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
       behavior: "smooth"
     });
 
-    console.log(
-      `Прокрутка к блоку: ${sections[index].id} (координата: ${scrollTarget})`
-    );
-
     setTimeout(() => {
       isScrolling = false;
-    }, 700); // Длительность прокрутки
+    }, 700);
   };
 
-  // Обработчик событий колесика мыши
   document.addEventListener("wheel", (event) => {
     if (isScrolling) return;
 
@@ -64,38 +52,34 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollToSection(currentSectionIndex);
   });
 
-  // Обработчик сенсорных свайпов
-  let touchStartY = 0;
-
   document.addEventListener("touchstart", (event) => {
     touchStartY = event.touches[0].clientY;
-  });
+  }, { passive: true });
 
   document.addEventListener("touchend", (event) => {
     if (isScrolling) return;
 
     const touchEndY = event.changedTouches[0].clientY;
+    const deltaY = touchStartY - touchEndY;
 
-    if (touchEndY < touchStartY && currentSectionIndex < sections.length - 1) {
-      currentSectionIndex++;
-    } else if (touchEndY > touchStartY && currentSectionIndex > 0) {
-      currentSectionIndex--;
+    if (Math.abs(deltaY) > swipeThreshold) {
+      if (deltaY > 0 && currentSectionIndex < sections.length - 1) {
+        currentSectionIndex++;
+      } else if (deltaY < 0 && currentSectionIndex > 0) {
+        currentSectionIndex--;
+      }
+      scrollToSection(currentSectionIndex);
     }
+  }, { passive: true });
 
-    scrollToSection(currentSectionIndex);
-  });
-
-  // Обновление текущего блока при изменении размера окна
   window.addEventListener("resize", () => {
     scrollToSection(currentSectionIndex);
   });
 
-  // Инициализация
   scrollToSection(currentSectionIndex);
 
-  // Привязка кнопок к секциям
   const buttonSectionMap = {
-    participation: 1, // Индексы соответствуют sectionIds
+    participation: 1,
     schedule: 2,
     fq: 3,
     partners: 4,
@@ -116,11 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Обработчик для кнопки Start
   const startButton = document.getElementById("start");
   if (startButton) {
     startButton.addEventListener("click", () => {
-      currentSectionIndex = 0; // Индекс first_screen
+      currentSectionIndex = 0;
       scrollToSection(currentSectionIndex);
     });
   }
