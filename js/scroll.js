@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Отключение скрипта на мобильных экранах
+  const isMobile = window.innerWidth < 1000;
+  if (isMobile) {
+    console.log("Скрипт отключен на мобильных устройствах.");
+    return;
+  }
+
   const sectionIds = [
     "first_screen",
     "second_screen",
