@@ -106,6 +106,7 @@
     color: white;
     text-decoration: none;
   }
+
   .disable-selection {
     -moz-user-select: none;
     -ms-user-select: none;
@@ -235,6 +236,11 @@
 
   .participation:hover, .schedule:hover, .fq:hover, .partners:hover, .prize:hover, .form:hover {
     color: #BEBEBE;
+  }
+
+  .first_screen_title {
+    position: absolute;
+    margin-top: calc(-1080 / 1920 * 100vw);
   }
 
   .title {
@@ -501,7 +507,7 @@
     flex-direction: row;
     width: 100%;
     height: auto;
-    padding-top: calc(0 / 1920 * 100vw);
+    padding-top: calc(150 / 1920 * 100vw);
     padding-left: calc(78 / 1920 * 100vw);
     padding-right: calc(78 / 1920 * 100vw);
     z-index: 0;

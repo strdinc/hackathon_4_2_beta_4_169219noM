@@ -122,7 +122,7 @@
 
   .container {
     position: absolute; /* Выход из потока */
-    top: calc(-100 / 3440 * 100vw);
+    top: calc(-110 / 3440 * 100vw);
     left: 0;
     width: 100vw;
     z-index: -1; /* Помещаем на задний план */
@@ -130,9 +130,9 @@
   }
 
   .first_screen {
-    margin-top: calc(200 / 3440 * 100vw);
+    margin-top: calc(0 / 3440 * 100vw);
     width: calc(3440 / 3440 * 100vw);
-    height: calc(1080 / 3440 * 100vw);
+    height: calc(1200 / 3440 * 100vw);
     position: relative;
   }
 
@@ -238,12 +238,17 @@
     color: #BEBEBE;
   }
 
+  .first_screen_title {
+    position: absolute;
+    margin-top: calc(-1350 / 3440 * 100vw);
+  }
+
   .title {
     font-family: 'Gilroy', arial, serif;
     color: white;
     font-size: calc(465 / 3440 * 100vw);
     position: relative;
-    margin-top: calc(110 / 3440 * 100vw);
+    margin-top: calc(350 / 3440 * 100vw);
     margin-left: calc(838 / 3440 * 100vw);
     text-align: left;
     font-weight: 700;
@@ -266,7 +271,8 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: calc(1080 / 3440 * 100vw);
+    padding-top: calc(100 / 3440 * 100vw);
+    height: auto;
     margin-bottom: calc(150 / 3440 * 100vw);
   }
 
@@ -382,7 +388,7 @@
     width: calc(3440 / 3440 * 100vw);
     height: auto;
     padding-left: calc(838 / 3440 * 100vw);
-    padding-top: calc(78 / 3440 * 100vw);
+    padding-top: calc(300 / 3440 * 100vw);
     margin-bottom: calc(400 / 3440 * 100vw);
   }
 
@@ -501,6 +507,7 @@
     flex-direction: row;
     width: 100%;
     height: auto;
+    padding-top: calc(150 / 3440 * 100vw);
     padding-right: calc(838 / 3440 * 100vw);
     padding-left: calc(838 / 3440 * 100vw);
     margin-bottom: calc(400 / 3440 * 100vw);
@@ -581,7 +588,7 @@
     position: relative;
     display: flex;
     width: auto;
-    height: calc(1080 / 3440 * 100vw);
+    height: calc(1200 / 3440 * 100vw);
     padding-left: calc(838 / 3440 * 100vw);
     padding-right: calc(838 / 3440 * 100vw);
   }
@@ -596,7 +603,7 @@
     position: relative;
     display: flex;
     width: auto;
-    height: calc(1080 / 3440 * 100vw);
+    height: calc(1200 / 3440 * 100vw);
     padding-left: calc(838 / 3440 * 100vw);
     padding-right: calc(838 / 3440 * 100vw);
   }

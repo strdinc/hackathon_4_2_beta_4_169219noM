@@ -36,7 +36,7 @@ function createWorld() {
   // Добавляем рендерер в контейнер
   container.style.position = "relative";
   renderer.domElement.style.position = "absolute";
-  renderer.domElement.style.top = "0";
+  renderer.domElement.style.top = "calc(78 / 1920 * 100vw)";
   renderer.domElement.style.left = "0";
   renderer.domElement.style.width = "100%";
   renderer.domElement.style.height = "100%";
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 
 function onWindowResize() {
-  const container = document.querySelector('.first_screen');
+  const container = document.querySelector('.fifth_screen');
   _width = container.clientWidth;
   _height = container.clientHeight;
   renderer.setSize(_width, _height);
